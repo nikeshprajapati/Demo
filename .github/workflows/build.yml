@@ -6,6 +6,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Build project
-        shell: cmd
-        run: cmd /c "D:\Visual Studio\MSBuild\Current\Bin\MSBuild.exe" "D:\VS cache\Demo\Demo.sln" /p:Configuration=Release /p:Platform=x64
+      - name: c-linter
+        uses: jidicula/clang-format-github-action@v3.4.0
+        with:
+          clang-format-version: '11'
+          check-path: 'src'
+        
