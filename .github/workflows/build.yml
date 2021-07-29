@@ -6,9 +6,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: c-linter
-        uses: github/super-linter@v4
-        env:
-          VALIDATE_CPP: true
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN }}
+      - name: clang-tidy
+        uses: HorstBaerbel/action-clang-tidy@1.2
+        with:
+          scandir: '.'
+          buildir: 'build'
+          extensions: 'c,h,C,H,cpp,hpp,cc,hh,c++,h++,cxx,hxx'
         
