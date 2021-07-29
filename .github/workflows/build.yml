@@ -1,0 +1,10 @@
+name: Build Linux
+on: [ push ]
+jobs:
+  Build-Test:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build project
+        run: powershell ./build.ps1
