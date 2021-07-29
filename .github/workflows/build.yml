@@ -7,4 +7,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build project
-        run: powershell ./build.ps1
+        shell: cmd
+        run: build.ps1
