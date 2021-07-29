@@ -2,7 +2,7 @@ name: Build Linux
 on: [ push ]
 jobs:
   Build-Test:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
