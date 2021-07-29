@@ -8,4 +8,4 @@ jobs:
         uses: actions/checkout@v2
       - name: Build project
         shell: cmd
-        run: build.ps1
+        run: cmd /c "D:\Visual Studio\MSBuild\Current\Bin\MSBuild.exe" "D:\VS cache\Demo\Demo.sln" /p:Configuration=Release /p:Platform=x64
