@@ -1,2 +1,1 @@
-﻿Write-Host "Executing"
-cmd/c "D:\Visual Studio\MSBuild\Current\Bin\MSBuild.exe" "D:\VS cache\Demo\Demo.sln" /p:Configuration=Release /p:Platform=x64
+﻿cmd /c "C:\Program\ Files\ (x86)\Microsoft Visual Studio\2019\MSBuild\Current\Bin\MSBuild.exe" "D:\VS cache\Demo\Demo.sln" /p:Configuration=Release /p:Platform=x64
