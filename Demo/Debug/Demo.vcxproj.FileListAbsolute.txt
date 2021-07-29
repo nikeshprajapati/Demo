@@ -1,2 +1,0 @@
-D:\VS cache\Demo\Debug\Demo.exe.lastcodeanalysissucceeded
-D:\VS cache\Demo\Demo\Debug\NativeCodeAnalysis.read.1.tlog
