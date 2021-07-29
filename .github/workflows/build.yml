@@ -7,7 +7,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: c-linter
-        uses: jidicula/clang-format-github-action@v3.4.0
+        uses: jidicula/clang-format-action@v3.4.0
         with:
           clang-format-version: '11'
           check-path: 'src'
